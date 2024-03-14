@@ -2,15 +2,15 @@
 A Library Management System designed to see the books available in a college library. It allows librarians/students to register as a user and add/delete and view books from the college library hassle free. The backend is designed as a Monolithic Architecture with various nuances as discussed below.
 
 # Technologies and Dependencies Used
-Maven used as a dependency management tool.
-Java version: 17 and Spring Boot version: 3.1.9 are used to build hassle free web applications and writing REST APIs.
-Spring Security used for Authentication and Authorizations using JWT Tokens.
-Spring data JPA (Hibernate) Used to reduce the time of writing hardcoded sql queries and instead allows to write much more readable and scalable code.
-H2 in memory database is used as a Java persistence store.
-Project Lombok Reduces the time of writing java boiler plate code.
-Swagger is used to for the API documentation.
-JUnit 4 and Mockito are used for writing test case scenarios.
-JPA Auditing for storing Auditable data.
+- Maven used as a dependency management tool.
+- Java version: 17 and Spring Boot version: 3.1.9 are used to build hassle free web applications and writing REST APIs.
+- Spring Security used for Authentication and Authorizations using JWT Tokens.
+- Spring data JPA (Hibernate) Used to reduce the time of writing hardcoded sql queries and instead allows to write much more readable and scalable code.
+- H2 in memory database is used as a Java persistence store.
+- Project Lombok Reduces the time of writing java boiler plate code.
+- Swagger is used to for the API documentation.
+- JUnit 4 and Mockito are used for writing test case scenarios.
+- JPA Auditing for storing Auditable data.
 
 # Using Library Management System
 CLI-->

@@ -1,6 +1,7 @@
 package com.books.librarymanagementsystem.rest;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyLong;
 import static org.mockito.Mockito.times;
@@ -83,6 +84,15 @@ public class BooksControllerTest {
         .getData());
     assertEquals(HttpStatus.OK, response.getStatusCode());
     verify(booksService, times(1)).getBook(anyLong());
+  }
+
+  @Test
+  public void addBook_shouldThrowException_whenNullBookGiven() throws BooksException {
+
+    when(booksService.addBook(null)).thenThrow(BooksException.class);
+    assertThrows(BooksException.class, () -> {
+      booksController.addBook(null);
+    });
   }
 
   @Test
